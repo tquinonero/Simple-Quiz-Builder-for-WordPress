@@ -1,0 +1,103 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.gcq-quiz {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.gcq-question {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.gcq-question:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gcq-question h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 400; /* Changed from 600 to 400 */
+}
+
+.gcq-question label {
+    display: block;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    font-weight: 400;
+}
+
+.gcq-question input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.gcq-submit {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gcq-submit:hover {
+    background: linear-gradient(135deg, #45a049, #4CAF50);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.gcq-submit:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gcq-results {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #e7f3fe;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.gcq-results h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.gcq-results p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .gcq-quiz {
+        padding: 1rem;
+    }
+
+    .gcq-question {
+        padding: 1rem;
+    }
+
+    .gcq-submit {
+        width: 100%;
+    }
+}
